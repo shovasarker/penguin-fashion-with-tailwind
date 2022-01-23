@@ -32,15 +32,18 @@
     <body>
         <header class="bg-header pb-12 lg:pb-20">
             <!-- navbar-start -->
-            <nav class="container flex justify-between items-center px-2 md:px-4 py-6 md:py-8">
+            <nav
+                class="container flex justify-between items-center px-2 md:px-4 lg:px-8 xl:px-16 2xl:px-24 py-6 md:py-8">
                 <a href="#">
                     <img class="w-48 md:w-72" src="./images/logo.png" alt="Penguin Fashion Logo">
                 </a>
 
                 <button class="px-2 py-2 block lg:hidden rounded-md border focus:shadow-md active:shadow-md">
-                    <span class="w-3 bg-gray-800 rounded-full block" style="height: 2px; margin-bottom: 3px;"></span>
-                    <span class="w-3 bg-gray-800 rounded-full block" style="height: 2px; margin-bottom: 3px;"></span>
-                    <span class="w-3 bg-gray-800 rounded-full block" style="height: 2px; "></span>
+                    <span class="w-4 md:w-5 bg-gray-800 rounded-full block"
+                        style="height: 2px; margin-bottom: 3px;"></span>
+                    <span class="w-4 md:w-5 bg-gray-800 rounded-full block"
+                        style="height: 2px; margin-bottom: 3px;"></span>
+                    <span class="w-4 md:w-5 bg-gray-800 rounded-full block" style="height: 2px; "></span>
                 </button>
 
                 <div class="space-x-4 hidden lg:block">
@@ -52,14 +55,17 @@
             </nav>
             <!-- navbar-end -->
             <!-- banner section start -->
-            <section class="container px-2 md:px-4 flex flex-col lg:flex-row lg:justify-around lg:items-center">
+            <section
+                class="container px-2 md:px-4 lg:px-8 xl:px-16 2xl:px-24 flex flex-col lg:flex-row lg:justify-between xl:justify-start lg:items-center xl:gap-24 2xl:gap-44">
                 <div class="space-y-4 mb-5 lg:mb-0">
-                    <h1 class="text-4xl md:text-6xl font-bold uppercase">
+                    <h1 class="leading-tight md:leading-tight lg:leading-tight xl:leading-tight 2xl:leading-tight text-4xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold
+                        uppercase">
                         <span class="text-heading">Be the Penguins</span>
                         <br>
                         of Winter
                     </h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, adipisci.</p>
+                    <p class="2xl:text-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, adipisci.
+                    </p>
                     <button class="px-7 py-4 bg-gradient-to-b from-gstart to-gend text-white rounded-xl uppercase"><i
                             class="fas fa-shopping-cart"></i> buy
                         now</button>
@@ -74,7 +80,7 @@
 
         <!-- main section start -->
 
-        <main class="container px-2 md:px-4">
+        <main class="container px-2 md:px-4 lg:px-8 xl:px-16 2xl:px-24">
             <!-- woman jacket section start -->
             <section class=" my-12">
                 <h1 class="text-4xl md:text-5xl font-bold text-center md:text-left uppercase mb-5">Woman Jacket</h1>
@@ -191,6 +197,48 @@
                 </div>
             </section>
             <!-- man jacket section end -->
+
+            <!-- utilities section start -->
+            <!-- --------------------------
+                 Using Grid to Implement
+            ---------------------------- -->
+            <section class="my-20 grid grid-cols-1 lg:grid-cols-5 gap-5 gap-x-8">
+                <div
+                    class="lg:col-span-3 lg:row-span-3 order-1 lg:order-2 flex justify-center items-center p-5 mb-7 lg:mb-0">
+                    <img src="./images/shopping.png" alt="Shopping Illustration">
+                </div>
+                <div class="lg:col-span-2 order-2 lg:order-1 flex flex-col lg:flex-row items-center gap-4 p-6 xl:px-5
+                    xl:py-0 bg-white rounded-xl shadow-xl">
+                    <img class="w-20" src="./images/house.png" alt="">
+                    <div class="space-y-3 text-center lg:text-left">
+                        <h4 class="text-2xl font-bold">Find the Perfect Fit</h4>
+                        <p>Everybody is different, which is why we
+                            offer styles for every body.</p>
+                    </div>
+                </div>
+                <div class="lg:col-span-2 order-4 flex flex-col lg:flex-row items-center gap-4 p-6 xl:px-5
+                    xl:py-0 bg-white rounded-xl shadow-xl">
+                    <img class="w-20" src="./images/house.png" alt="">
+                    <div class="space-y-3 text-center lg:text-left">
+                        <h4 class=" text-2xl font-bold">Find the Perfect Fit</h4>
+                        <p>Everybody is different, which is why we
+                            offer styles for every body.</p>
+                    </div>
+
+                </div>
+                <div class="lg:col-span-2 order-5 flex flex-col lg:flex-row items-center gap-4 p-6 xl:px-5
+                    xl:py-0 bg-white rounded-xl shadow-xl">
+                    <img class="w-20" src="./images/house.png" alt="">
+                    <div class="space-y-3 text-center lg:text-left">
+                        <h4 class="text-2xl font-bold">Find the Perfect Fit</h4>
+                        <p>Everybody is different, which is why we
+                            offer styles for every body.</p>
+                    </div>
+
+                </div>
+            </section>
+            <!-- utilities section end -->
+
         </main>
 
 
